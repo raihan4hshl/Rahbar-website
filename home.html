@@ -3,51 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>স্বাগতম</title>
+    <title>The Living Library | মানুষের আর্কাইভ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;700&family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="activities.js"></script>
 </head>
-<body>
-    <header>
-        <h1>রাহবার</h1>
-        <p>অভাবীদের সাহায্য করতে প্রতিশ্রুতিবদ্ধ   </p>
-        <p>সহানুভূতি&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;সহযোগিতা&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;সমর্থন&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;সম্মান </p>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <div class="hero">
-        <h1>Making a Difference</h1>
+<body>
+    
+    <div class="top-banner">
+        📍 Open to Students at Columbia's School • JOIN US
     </div>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a nonprofit organization dedicated to providing humanitarian assistance to communities in need. Our goal is to bring hope and support through various initiatives and projects.</p>
-    </section>
+    <header>
+        <div class="logo">
+            <div class="logo-box">জীবন্ত<br>লাইব্রেরি</div>
+            <nav>
+                <a href="#">হোম</a>
+                <a href="#">আর্কাইভ</a>
+                <a href="javascript:void(0)" onclick="openModal()" class="submit-link">গল্প জমা দিন</a>
+                <a href="#">আমাদের সম্পর্কে</a>
+            </nav>
+        </div>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>We focus on providing emergency relief, education, and healthcare to underprivileged communities around the world.</p>
-    </section>
+        <div class="header-actions">
+            <input type="text" class="search-box" placeholder="Search stories...">
+            <button class="btn-login">YOUR VOICE</button>
+        </div>
+    </header>
+    <!--------------------hero section------------------>
+    <div class="hero">
+        <h1>অনন্ত মহাফেজখানা</h1>
+        <p>সাধারণ মানুষের অসাধারণ সব গল্প, কবিতা আর স্মৃতি নিয়ে সাজানো এক জীবন্ত আর্কাইভ</p>
+    </div>
+    <!----------------------end hero section------------------>
+    
+    <!----------------------archive grid section------------------>
+    <div class="container">
+        <aside class="sidebar">
+    <h3>Thematic Threads</h3>
+    <ul>
+        <li class="thread-item">
+            <a href="#" class="main-link"><i class="icon-flame"></i> মানবিক গুণাবলি</a>
+            <ul class="sub-menu">
+                <li><a href="#">অদম্য সাহস</a></li>
+                <li><a href="#">করুণার প্রতিচ্ছবি</a></li>
+                <li><a href="#">সৃজনশীল সত্তা</a></li>
+            </ul>
+        </li>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Check out our ongoing and completed projects aimed at improving lives and fostering sustainable development.</p>
-    </section>
+        <li class="thread-item">
+            <a href="#" class="main-link"><i class="icon-heart"></i> ঐতিহাসিক প্রেক্ষাপট</a>
+            <ul class="sub-menu">
+                <li><a href="#">শিকড়ের টান</a></li>
+                <li><a href="#">বিপ্লবের কণ্ঠস্বর</a></li>
+                <li><a href="#">হারানো দিনকাল</a></li>
+            </ul>
+        </li>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@humanitarian.org | Phone: +123 456 7890</p>
-    </section>
+        <li class="thread-item">
+            <a href="#" class="main-link"><i class="icon-pen"></i> জীবনধারা ও ঘটনা</a>
+            <ul class="sub-menu">
+                <li><a href="#">অচেনা নায়ক</a></li>
+                <li><a href="#">মহাকালের সাক্ষী</a></li>
+                <li><a href="#">স্মৃতির ঝর্ণাধারা</a></li> </ul> </li>
 
-    <footer>
-        <p>&copy; 2024 Humanitarian Assistance Organization. All rights reserved.</p>
-    </footer>
+        <li class="thread-item">
+            <a href="#" class="main-link"><i class="icon-clock"></i> মহাকালের সাক্ষী</a>
+            <ul class="sub-menu">
+                <li><a href="#">শারীরিক সীমাবদ্ধতা জয়</a></li>
+                <li><a href="#">অন্যায়ের প্রতিবাদ</a></li>
+                <li><a href="#">যুদ্ধজয়ী</a></li>
+            </ul>
+        </li>
+    </ul>
+        </aside>
+
+        <main class="archive-content">
+            
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80" alt="ব্যক্তির ছবি">
+                        <div class="card-badge">স্মৃতির ঝর্ণাধারা</div>
+                    </div>
+                    <div class="card-details">
+                        <h2 class="person-name">আহমেদ রফিক</h2>
+                        <p class="person-role">ভাষা সৈনিক ও লেখক</p>
+                        <p class="person-bio">১৯৫২ সালের ভাষা আন্দোলনের এক জীবন্ত সাক্ষী, যার লেখনীতে ফুটে উঠেছে এক অমর ইতিহাস...</p>
+                        <div class="card-footer">
+                            <a href="#" class="read-more">গল্পটি পড়ুন →</a>
+                            <span class="incident-tag">#১৯৫২</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80" alt="ব্যক্তির ছবি">
+                        <div class="card-badge">স্মৃতির ঝর্ণাধারা</div>
+                    </div>
+                    <div class="card-details">
+                        <h2 class="person-name">আহমেদ রফিক</h2>
+                        <p class="person-role">ভাষা সৈনিক ও লেখক</p>
+                        <p class="person-bio">১৯৫২ সালের ভাষা আন্দোলনের এক জীবন্ত সাক্ষী, যার লেখনীতে ফুটে উঠেছে এক অমর ইতিহাস...</p>
+                        <div class="card-footer">
+                            <a href="#" class="read-more">গল্পটি পড়ুন →</a>
+                            <span class="incident-tag">#১৯৫২</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80" alt="ব্যক্তির ছবি">
+                        <div class="card-badge">স্মৃতির ঝর্ণাধারা</div>
+                    </div>
+                    <div class="card-details">
+                        <h2 class="person-name">আহমেদ রফিক</h2>
+                        <p class="person-role">ভাষা সৈনিক ও লেখক</p>
+                        <p class="person-bio">১৯৫২ সালের ভাষা আন্দোলনের এক জীবন্ত সাক্ষী, যার লেখনীতে ফুটে উঠেছে এক অমর ইতিহাস...</p>
+                        <div class="card-footer">
+                            <a href="#" class="read-more">গল্পটি পড়ুন →</a>
+                            <span class="incident-tag">#১৯৫২</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80" alt="ব্যক্তির ছবি">
+                        <div class="card-badge">স্মৃতির ঝর্ণাধারা</div>
+                    </div>
+                    <div class="card-details">
+                        <h2 class="person-name">আহমেদ রফিক</h2>
+                        <p class="person-role">ভাষা সৈনিক ও লেখক</p>
+                        <p class="person-bio">১৯৫২ সালের ভাষা আন্দোলনের এক জীবন্ত সাক্ষী, যার লেখনীতে ফুটে উঠেছে এক অমর ইতিহাস...</p>
+                        <div class="card-footer">
+                            <a href="#" class="read-more">গল্পটি পড়ুন →</a>
+                            <span class="incident-tag">#১৯৫২</span>
+                        </div>
+                    </div>
+                </div>
+            
+        </main>
+    </div>
+    <div class="cta-section">
+        <button class="btn-submit">SUBMIT YOUR STORY</button>
+        <p>Share a life, an event, a memory</p>
+    </div>
+
+    <section id="submit-form" class="submission-area">
+    <h3>আপনার গল্প যোগ করুন (Add Your Story)</h3>
+    <div class="form-grid">
+        <input type="text" id="userName" placeholder="নাম (Name)">
+        <input type="text" id="userRole" placeholder="পরিচয় (Role/Title)">
+        <input type="text" id="userTag" placeholder="ট্যাগ (e.g. #১৯৫২)">
+        <input type="text" id="userImg" placeholder="ছবির লিঙ্ক (Image URL)">
+        <textarea id="userBio" placeholder="জীবনবৃত্তান্ত বা গল্প (Bio or Story)"></textarea>
+        <button onclick="addNewCard()" class="btn-submit">আর্কাইভে যুক্ত করুন</button>
+    </div>
+</section>
+    <!-----------end archive grid section----------->
+    <div id="submitModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3>আর্কাইভে নতুন গল্প যুক্ত করুন</h3>
+        <p>Share a life, an event, or a memory with the world.</p>
+        
+        <div class="form-grid">
+            <input type="text" id="userName" placeholder="নাম (Name)">
+            <input type="text" id="userRole" placeholder="পরিচয় (Role/Title)">
+            <input type="text" id="userTag" placeholder="ট্যাগ (e.g. #১৯৫২)">
+            <input type="text" id="userImg" placeholder="ছবির লিঙ্ক (Image URL)">
+            <textarea id="userBio" placeholder="জীবনবৃত্তান্ত বা গল্প (Bio or Story)"></textarea>
+            <button onclick="addNewCard()" class="btn-submit">SUBMIT TO ARCHIVE</button>
+        </div>
+    </div>
+</div>
 </body>
 </html>
